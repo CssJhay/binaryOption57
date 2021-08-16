@@ -1,0 +1,54 @@
+.legal-section {
+  padding: 40px 0;
+  text-align: left;
+  direction: ltr;
+}
+
+.legal-list {
+  padding-left: 0;
+}
+
+.legal-box ol {
+  list-style: none;
+  counter-reset: li;
+  color: #ffffff;
+}
+
+.legal-box ol > li:before {
+  counter-increment: li;
+  content: counters(li, ".") ". ";
+  position: static;
+  color: inherit;
+  font-weight: bold;
+}
+
+/*404*/
+.b-error {
+  padding: 0;
+  margin: 0;
+  font: 18px 'Arial', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #eee;
+}
+
+.h-wap-404 {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.disable-overlay {
+  cursor: not-allowed;
+}
